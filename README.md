@@ -1,6 +1,8 @@
 # SMR Safety Thailand
 เรื่องนิวเคลียร์ คุยกันให้เข้าใจได้
 
+อ่านเว็บไซต์: [smr-safety-th.netlify.app](https://smr-safety-th.netlify.app)
+
 แหล่งความรู้ภาษาไทยที่ Roppon Picha ดูแลส่วนบุคคล เชื่อมกับความสนใจด้านงานวิจัยของ วป. ไม่ใช่ช่องทางหรือจุดยืนอย่างเป็นทางการของ สทน.
 
 ## อ่านอะไรได้บ้าง
@@ -21,7 +23,7 @@ node scripts/test-measurement.cjs measurement.js
 
 ## อัปเดตเนื้อหา
 แก้ไฟล์ใน docs/, updates/ หรือ technical-baseline/ -> เปิด pull request -> อ่าน Netlify Deploy Preview -> ตรวจสาระ/ลิงก์ -> merge เมื่อพร้อม
-main เป็นสาขาเผยแพร่เมื่อเชื่อม Netlify Git deployment แล้ว
+main เชื่อม Netlify Git deployment แล้ว: push หรือ merge เข้า main จะ build และเผยแพร่เว็บอัตโนมัติ
 ดู [แนวทางเนื้อหา](CONTRIBUTING.md), [style guide](STYLE_GUIDE.md) และ [แม่แบบข่าว](templates/update-template.md)
 
 ## การดูแลข้อมูล
