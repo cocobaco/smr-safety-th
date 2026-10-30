@@ -1,0 +1,12 @@
+[build]
+  command = "python scripts/build.py && node scripts/test-measurement.cjs measurement.js"
+  publish = "dist"
+[build.environment]
+  PYTHON_VERSION = "3.11"
+  NODE_VERSION = "22"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+

@@ -1,0 +1,66 @@
+{
+  "review_date": "2026-10-30",
+  "status": "Initial public reference collection; claims retain their source and review dates",
+  "sources": [
+    {
+      "id": "P01",
+      "title": "Milestones in the Development of a National Infrastructure for Nuclear Power, NG-G-3.1 (Rev. 2), STI/PUB/2073",
+      "organization": "IAEA",
+      "publication_date": "2024 (printed June 2024)",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB2073_web.pdf",
+      "access_date": "2026-10-30",
+      "locator": "Table 1, printed p.8 / PDF p.20; sections 2–3; foreword and SMR annex",
+      "supports": "19-issue list; framing of SMR infrastructure considerations",
+      "access": "Relevant PDF extracted text inspected",
+      "limits": "Thai wording is an editorial summary, not official translation; not a Thai legal standard or readiness assessment"
+    },
+    {
+      "id": "P02",
+      "title": "Milestones Approach",
+      "organization": "IAEA",
+      "publication_date": null,
+      "url": "https://www.iaea.org/topics/infrastructure-development/milestones-approach",
+      "access_date": "2026-10-30",
+      "locator": "Three Phases and Three Milestones; Nuclear Infrastructure Issues",
+      "supports": "Three phases and milestone outcomes; issues require attention across phases",
+      "access": "Full relevant web text inspected",
+      "limits": "General guidance; no conclusion about current Thailand milestone"
+    },
+    {
+      "id": "P03",
+      "title": "IAEA – กฟผ. เดินหน้าสร้างความรู้ความเข้าใจ SMR เสริมความมั่นคงพลังงาน",
+      "organization": "EGAT",
+      "publication_date": "2026-10-26",
+      "url": "https://www.egat.co.th/home/20261026-pre135/",
+      "access_date": "2026-10-30",
+      "locator": "Article body, final paragraph beginning ทั้งนี้ ร่างแผน",
+      "supports": "EGAT describes draft PDP2026 SMR target 9000 MW and first plant target BE2580",
+      "access": "Article body inspected",
+      "limits": "News report of draft targets; not final PDP approval instrument or licence; policy-authority source still to obtain"
+    },
+    {
+      "id": "P04",
+      "title": "Creating a GitHub Pages site",
+      "organization": "GitHub",
+      "publication_date": null,
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+      "access_date": "2026-10-30",
+      "locator": "Creating your site; static site generators",
+      "supports": "GitHub Pages can serve repository content as a website; Markdown entry options",
+      "access": "Official documentation inspected",
+      "limits": "Feature reference only; no repository/Pages settings or account plan changed"
+    }
+  ],
+  "access_failures": [
+    {
+      "url": "https://www.eppo.go.th/?id=22638%3Anews-080469-01&option=com_k2&view=item",
+      "result": "Redirect loop during direct retrieval; not used as verified claim source"
+    }
+  ],
+  "prior_design_sources": "../technical-baseline/evidence/sources.json",
+  "editorial_decisions": {
+    "identity": "User confirmed personal knowledge resource connected to NRSRS research interests, not official section channel",
+    "proposed_repository": "smr-safety-th",
+    "automation": "No scheduled updater or automatic publication configured"
+  }
+}
