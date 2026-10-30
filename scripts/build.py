@@ -2,7 +2,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
-import argparse, html, json, os, re, shutil
+import argparse, html, json, os, re, shutil, uuid
 import markdown
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -14,7 +14,14 @@ if not OUT.is_absolute(): OUT=ROOT/OUT
 OUT=OUT.resolve()
 if OUT==ROOT or ROOT in OUT.parents and OUT.parts[len(ROOT.parts):][0] in ("docs","updates","technical-baseline","scripts","evidence"):
     raise SystemExit("Refusing an output path over source content")
-if OUT.exists() and any(OUT.iterdir()): raise SystemExit("Output must be new or empty; preserve prior build")
+if OUT.exists() and any(OUT.iterdir()):
+    if os.environ.get("NETLIFY") == "true" and OUT == ROOT / "dist" and (OUT / "build-manifest.json").is_file():
+        # Netlify restores dist from cache. Preserve it before making a fresh build.
+        previous = ROOT / ".netlify" / "previous-builds" / uuid.uuid4().hex
+        previous.parent.mkdir(parents=True, exist_ok=True)
+        OUT.rename(previous)
+    else:
+        raise SystemExit("Output must be new or empty; preserve prior build")
 OUT.mkdir(parents=True,exist_ok=True)
 def write(rel,content):
     target=OUT/rel
